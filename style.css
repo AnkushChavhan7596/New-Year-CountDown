@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-family: 'Sansita', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233),rgba(0, 0, 0, 0.192) ), url("./Images/photo-1639753528176-fea260eda9ea.jpg");
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.956);
+    z-index: 1;
+}
+
+.loading{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.happy__new__year h1{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 600;
+    color: Yellow;
+    text-shadow: 1px 1px 7px rgb(255, 255, 255);
+    position: absolute;
+    top:10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+
+.wrapper{
+    z-index: 10;
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.heading h2{
+    font-size: 4.5rem;
+    font-weight: 500;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+}
+
+.count__down{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.days, .hours, .mins , .secs{
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 5px .1px rgba(245, 245, 245, 0.616);
+}
+
+small{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(209, 209, 209);
+}
+
+.timer{
+    width: 170px;
+    background: rgba(0, 0, 0, 0.315);
+    margin: 5px 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.new__year{
+    font-size: 15rem;
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
+    left:50%;
+    opacity: .1;
+    text-shadow: 1px 1px 5px .1px rgba(255, 255, 255, 0.527);
+    transform: translate(-50%, -20%);
+    z-index: -1;
+}
+
+/* ======= media queries ======== */
+@media screen and (max-width: 900px){
+    .heading h2{
+        font-size: 3.7rem;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 3rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 130px;
+        margin: 5px 20px;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 740px){
+    .heading h2{
+        font-size: 3.2rem;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 2.7rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 130px;
+        margin: 5px 10px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:15%;
+        font-size: 12rem;
+    }
+
+    .count__down{
+        padding-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .heading h2{
+        font-size: 3rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 2.5rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .happy__new__year h1{
+        font-size: 2rem;
+    }
+
+    .timer{
+        width: 130px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:15%;
+        font-size: 12rem;
+    }
+
+    .count__down{
+        padding-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 580px){
+    .heading h2{
+        font-size: 2.5rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 2.3rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 110px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:15%;
+        font-size: 10rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .heading h2{
+        font-size: 2.2rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 2.1rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 100px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:17%;
+        font-size: 10rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 440px){
+    .heading h2{
+        font-size: 2rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 1.9rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 90px;
+        margin: 5px 3px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:21%;
+        font-size: 8rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .heading h2{
+        font-size: 1.7rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 1.6rem;
+    }
+    
+    small{
+        font-size: 1.2rem;
+        margin-top: 5px;
+
+    }
+
+    .timer{
+        width: 70px;
+        margin: 5px 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:21%;
+        font-size: 8rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 340px){
+    .heading h2{
+        font-size: 1.4rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 1.5rem;
+    }
+    
+    small{
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+
+    .timer{
+        width: 65px;
+        margin: 5px 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:25%;
+        font-size: 6rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
+
+
+
+@media screen and (max-width: 320px){
+    .heading h2{
+        font-size: 1.2rem;
+        word-spacing: 5px;
+    }
+
+    .days, .hours, .mins , .secs{
+        font-size: 1.3rem;
+    }
+    
+    small{
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .timer{
+        width: 60px;
+        margin: 5px 5px;
+        padding: 10px;
+    }
+
+    .new__year{
+        top:23%;
+        font-size: 6rem;
+    }
+
+    .count__down{
+        padding-top: 30px;
+    }
+}
